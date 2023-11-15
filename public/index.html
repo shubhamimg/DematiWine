@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demati</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./../src/input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./libs/swiper/swiper.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body">
+    <!-- navBar start -->
+    
+    <div class="w-full mx-auto px-12 items-center lg:flex justify-between fixed z-10 hidden bg-black bg-opacity-20">
+        <div class="logo h-[30px] w-[100px]">
+            <a href="javascript:;" class="decoration-0">
+                <img src="./img/logo.png" alt="logo" class="h-[100%] w-[100% object-cover]">
+            </a>
+        </div>
+        <div class="">
+            <ul class="flex gap-10 items-center">
+                <li >
+                    <a href="#" class="decoration-0 text-white flex gap-2 items-baseline py-6 ">
+                        <span class="relative py-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:bg-white">
+                            HOME
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="decoration-0 text-white flex gap-2 items-baseline py-6 group">
+                        <span class="relative py-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out after:group-hover:w-full hover:duration-300">
+                            SHOP
+                        </span>
+                    </a>
+                </li>
+                <li class="relative group">
+                    <a href="javascript:;" class="decoration-0 text-white flex gap-2 items-baseline py-6 group">
+                        <span class="relative py-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out after:group-hover:w-full hover:duration-300">
+                            PRODUCT
+                        </span>
+                        <span class="group-hover:rotate-[180deg] duration-300">
+                            <div class="downArrow h-[13px] w-[13px]">
+                                <img src="./img/downArrow.svg" alt="downArrow" class="h-full w-full">
+                            </div>
+                        </span>
+                    </a>
+                    <ul class="flex flex-col gap-3 opacity-0 invisible absolute bg-white py-4 px-4 w-[200px] group-hover:opacity-100 group-hover:visible transition duration-300">
+                        <li class="">
+                            <a href="javascript:;" class="decoration-0 text-black font-semibold hover:text-yellow-900 duration-300 ">
+                                <span class="relative py-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out after:hover:w-full hover:duration-300">
+                                    Main
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="text-black font-semibold hover:text-yellow-900 duration-300">
+                                <span class="relative py-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out after:hover:w-full hover:duration-300">
+                                    Main
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="text-black font-semibold hover:text-yellow-900 duration-300">
+                                <span class="relative py-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out after:hover:w-full hover:duration-300">
+                                    Main
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="text-black font-semibold hover:text-yellow-900 duration-300">
+                                <span class="relative py-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out after:hover:w-full hover:duration-300">
+                                    Main
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="decoration-0 text-white py-6 group">
+                        <span class="relative py-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out after:group-hover:w-full hover:duration-300">
+                            BLOG
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="decoration-0 text-white py-6 group">
+                        <span class="relative py-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-in-out after:group-hover:w-full hover:duration-300">
+                            FEATURED
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="">
+            <ul class="flex gap-5 items-center">
+                <li>
+                    <a href="javascript:;" class="decoration-0 text-white">Login / Register</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="decoration-0 text-white">
+                        <div class="downArrow h-[20px] w-[20px]">
+                            <img src="./img/Magnifying Glass.svg" alt="downArrow" class="h-full w-full">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="decoration-0 text-white">
+                        <div class="downArrow h-[20px] w-[20px] relative">
+                            <img src="./img/heart.svg" alt="downArrow" class="h-full w-full">
+                            <div class="absolute top-[-12px] right-[-14px] bg-yellow-700 rounded-full text-[10px] h-[20px] w-[20px] flex items-center justify-center">
+                                0
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="decoration-0 text-white">
+                        <div class="downArrow h-[20px] w-[20px] relative">
+                            <img src="./img/bagshopping.svg" alt="downArrow" class="h-full w-full">
+                            <div class="absolute top-[-12px] right-[-14px] bg-yellow-700 rounded-full text-[10px] h-[20px] w-[20px] flex items-center justify-center">
+                                0
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- navBar Ends -->
+
+    <!-- hero Section start -->
+        <div class="w-full relative">
+            <div class="videoSection h-screen w-full overflow-hidden relative after:content-[''] after:absolute after:top-0 after:left-0 after:bg-black after:opacity-10 after:h-[100%] after:w-[100%]">
+                <video class="h-full w-full object-fill" autoplay muted loop>
+                    <source class="h-screen w-full" src="https://cdn.shopify.com/videos/c/vp/fdc7fe5529eb46719b18cec203e97c80/fdc7fe5529eb46719b18cec203e97c80.HD-1080p-3.3Mbps-10238307.mp4">
+                </video>
+            </div>
+            <div class="textSection absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-30%] text-center w-full sm:w-[85%] md:w-[75%] lg:w-[65%] xl:w-[50%]">
+                <div class="wineIcon rotate-[45deg] h-[50px] w-[50px] mx-auto">
+                    <img src="./img/wineglass.svg" alt="wineGlass" class="h-full w-full">
+                </div>
+                <div class="text-white w-full sm:w-[85%] mx-auto text-[45px] sm:text-[55px] lg:text-[69px] font-semibold leading-[110%] ">
+                    Raised from the stone below, our story begins.
+                </div>
+                <button class="text-white flex mx-auto items-baseline justify-between gap-2 border-2 mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                    Explore Collection
+                    <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                        <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                    </div>
+                </button>
+            </div>
+        </div>
+    <!-- hero Section Ends -->
+
+    <!-- swiper Section Start -->
+        <div class="swiperSection py-5">
+            <div class="heading text-[30px] sm:text-[35px] md:text-[40px] lg:text-[45px] xl:text-[50px] text-center font-semibold pt-3 pb-6 sm:pb-8 md:pb-12 lg:pb-16 xl:pb-20">
+                <span class="relative before:content-[''] before:absolute before:bottom-0 before:w-0 before:h-[3px] before:left-0 before:transition-all before:ease-in-out before:duration-300 before:bg-[#c0a483] before:hover:w-full before:hover:right-0">
+                    Our Collection
+                </span>
+            </div>
+            <div class="swiper mySwiper cardSwiper relative">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiperImg aspect-[3/2]">
+                            <img src="./img/swiper01.jpg" alt="swiperImg" class="h-full w-full">
+                        </div>
+                    </div>
+                    <div class="swiper-slide"> 
+                        <div class="swiperImg aspect-[3/2]">
+                            <img src="./img/swiper02.jpg" alt="swiperImg" class="h-full w-full">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperImg aspect-[3/2]">
+                            <img src="./img/swiper03.jpg" alt="swiperImg" class="h-full w-full">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperImg aspect-[3/2]">
+                            <img src="./img/swiper04.jpg" alt="swiperImg" class="h-full w-full">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperImg aspect-[3/2]">
+                            <img src="./img/swiper05.jpg" alt="swiperImg" class="h-full w-full">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperImg aspect-[3/2]">
+                            <img src="./img/swiper01.jpg" alt="swiperImg" class="h-full w-full">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperImg aspect-[3/2]">
+                            <img src="./img/swiper02.jpg" alt="swiperImg" class="h-full w-full">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperImg aspect-[3/2]">
+                            <img src="./img/swiper03.jpg" alt="swiperImg" class="h-full w-full">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperImg aspect-[3/2]">
+                            <img src="./img/swiper04.jpg" alt="swiperImg" class="h-full w-full">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperImg aspect-[3/2]">
+                            <img src="./img/swiper03.jpg" alt="swiperImg" class="h-full w-full">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next opacity-100 after:content-[*] right-[20px]">
+                    <div class="prevIcon h-[200px] w-[60px] rotate-[180deg]">
+                        <img src="./img/leftArrow.svg" alt="" class="h-full w-full">
+                    </div>
+                </div>
+                <div class="swiper-button-prev opacity-100 after:content-[*] left-[20px]">
+                    <div class="prevIcon h-[200px] w-[60px]">
+                        <img src="./img/leftArrow.svg" alt="" class="h-full w-full">
+                    </div>
+                </div>
+                <div class="upperCard px-6 hidden sm:block sm:py-4 md:py-8 xl:py-11 bg-white w-[400px] border-2 absolute top-[50%] left-[50%] z-[1000] translate-x-[-61%] translate-y-[-50%]">
+                    <div class="heading sm:text-[25px] lg:text-[30px] xl:text-[40px] font-semibold leading-[110%] py-4">
+                        Palmer Cellaries Collections
+                    </div>
+                    <div class="para text-[16px] opacity-50">
+                        A stunning assemblage of rare vintages and large formats unavailable anywhere else in the world.
+                    </div>
+                    <button class="text-black flex  items-baseline justify-between gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                        Explore Collection
+                        <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                            <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    <!-- swiper Section Ends -->
+
+    <!-- bottle Swiper start -->
+        <div class="BottleSection py-5">
+            <div class="heading text-[20px] sm:text-[25px] md:text-[30px] lg:text-[35px] xl:text-[40px] text-center font-semibold pt-3 pb-4 sm:pb-6 md:pb-10 lg:pb-12 xl:pb-15">
+                <span class="relative before:content-[''] before:absolute before:bottom-0 before:w-0 before:h-[3px] before:left-0 before:transition-all before:ease-in-out before:duration-300 before:bg-[#c0a483] before:hover:w-full before:hover:right-0">
+                    NEW - IN
+                </span>
+            </div>
+            <div class="swiper mySwiper bottleSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle01.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle02.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle03.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle04.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle01.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle02.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle03.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle04.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle01.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle02.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle03.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle04.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle01.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle02.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle03.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="MainCard shadow-xl rounded">
+                            <div class="cardImg aspect-[1/1]">
+                                <img src="./img/bottle04.jpg" alt="bottleImg" class="h-full w-full object-cover">
+                            </div>
+                            <div class="name text-[20px] font-semibold text-center text-yellow-700">
+                                ALIQUAM UPSELL FEATURES
+                            </div>
+                            <div class="rate text-center py-3">
+                                <span>
+                                    Rs 8326.00
+                                </span>
+                                <span class="text-yellow-700">
+                                    Rs 7456.00
+                                </span>
+                            </div>
+                            <button class="text-black flex  items-baseline justify-center mx-auto gap-2 border-2 border-black mt-[35px] py-3 px-8 group hover:text-yellow-400  duration-300">
+                                Add To Cart
+                                <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                    <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next opacity-100 after:content-[*] right-[20px]">
+                    <div class="prevIcon h-[200px] w-[60px] rotate-[180deg]">
+                        <img src="./img/leftArrowBl.svg" alt="" class="h-full w-full">
+                    </div>
+                </div>
+                <div class="swiper-button-prev opacity-100 after:content-[*] left-[20px]">
+                    <div class="prevIcon h-[200px] w-[60px]">
+                        <img src="./img/leftArrowBl.svg" alt="" class="h-full w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- bottle Swiper Ends -->
+
+    <!-- discover Section Start -->
+    <div class="discoverSection bg-[#f9f6f1] py-10">
+        <div class=" w-full xl:w-[1100px] mx-auto px-5 xl:px-0">
+            <div class="heading text-[20px] sm:text-[25px] md:text-[30px] lg:text-[35px] xl:text-[40px] text-center font-semibold pt-3 pb-5">
+                <span class="relative before:content-[''] before:absolute before:bottom-0 before:w-0 before:h-[3px] before:left-0 before:transition-all before:ease-in-out before:duration-300 before:bg-[#c0a483] before:hover:w-full before:hover:right-0">
+                    DISCOVER OUR RANGE
+                </span>
+            </div>
+            <div class="subHeding pb-10 text-[17px] md:text-[18px] lg:text-[20px] font-semibold flex items-center justify-center gap-8">
+                <span class="relative  after:content after:absolute after:bottom-0 after:left-0 after:h-2 after:w-full after:bg-gradient-to-t from-yellow-700">
+                    <a href="javascript:;">
+                        Red Wine
+                    </a>
+                </span>
+                <span>
+                    <a href="javascript:;">
+                        White Wine
+                    </a>
+                </span>
+                <span>
+                    <a href="javascript:;">
+                        Rose Wine
+                    </a>
+                </span>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ">
+                <div class="textSide order-2 lg:order-1 text-center lg:text-start">
+                    <div class="heading text-[25px] sm:text-[30px] md:text-[30px] lg:text-[35px] xl:text-[45px] font-semibold">
+                        Red wines
+                    </div>
+                    <div class="para font-[18px] py-5">
+                        Nunc interdum lacus sit amet orci. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Phasellus magna. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Cras sagittis.
+                    </div>
+                    <button class="flex items-baseline mx-auto lg:mx-0 justify-between gap-2 border-black border-2 md:mt-[20px] lg:mt-[25px] xl:mt-[35px] py-2 lg:py-3 px-4 sm:px-5 md:px-6 lg:px-8 group hover:text-yellow-400  duration-300">
+                        SHOP NOW
+                        <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                            <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                        </div>
+                    </button>
+                </div>
+                <div class="imgSide aspect-[5/3] order-1 lg:order-2">
+                    <img src="./img/discover01.png" alt="sectionImg" class="h-full w-full object-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- discover Section Ends -->
+
+    <!-- testimonial Section Start -->
+        <div class="testimonialSection py-8 px-5 w-full xl:w-[1100px] mx-0 xl:mx-auto">
+            <div class="relative">
+                <div class="swiper testiSwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="mainSlide">
+                            <div class="cardImg h-[70px] w-[70px] lg:h-[100px] lg:w-[100px] mx-auto">
+                                <img src="./img/inverted.svg" alt="commaImg" class="h-full w-full">
+                            </div>
+                            <div class="startDiv mx-auto py-4">
+                                <ul class="flex items-center justify-center gap-2">
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cardtxt text-[20px] sm:text-[25px] md:text-[25px] lg:text-[30px] xl:text-[30px] leading-[110%] font-semibold text-center PX-5 sm:px-20 lg:px-24">
+                                Blood bank canine teeth larynx occupational therapist oncologist optician plaque…
+                            </div>
+                            <div class="testiImg h-[110px] w-[110px] overflow-hidden rounded-full mx-auto mt-4">
+                                <img src="./img/testi01.jpg" alt="testiImg" class="h-full w-full">
+                            </div>
+                            <div class="name text-[17px] font-semibold text-center py-2">
+                                ANN SMITH
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mainSlide">
+                            <div class="cardImg h-[70px] w-[70px] lg:h-[100px] lg:w-[100px] mx-auto">
+                                <img src="./img/inverted.svg" alt="commaImg" class="h-full w-full">
+                            </div>
+                            <div class="startDiv mx-auto py-4">
+                                <ul class="flex items-center justify-center gap-2">
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cardtxt text-[20px] sm:text-[25px] md:text-[25px] lg:text-[30px] xl:text-[30px] leading-[110%] font-semibold text-center PX-5 sm:px-20 lg:px-24">
+                                Blood bank canine teeth larynx occupational therapist oncologist optician plaque…
+                            </div>
+                            <div class="testiImg h-[110px] w-[110px] overflow-hidden rounded-full mx-auto mt-4">
+                                <img src="./img/testi01.jpg" alt="testiImg" class="h-full w-full">
+                            </div>
+                            <div class="name text-[17px] font-semibold text-center py-2">
+                                ANN SMITH
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mainSlide">
+                            <div class="cardImg h-[70px] w-[70px] lg:h-[100px] lg:w-[100px] mx-auto">
+                                <img src="./img/inverted.svg" alt="commaImg" class="h-full w-full">
+                            </div>
+                            <div class="startDiv mx-auto py-4">
+                                <ul class="flex items-center justify-center gap-2">
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cardtxt text-[20px] sm:text-[25px] md:text-[25px] lg:text-[30px] xl:text-[30px] leading-[110%] font-semibold text-center PX-5 sm:px-20 lg:px-24">
+                                Blood bank canine teeth larynx occupational therapist oncologist optician plaque…
+                            </div>
+                            <div class="testiImg h-[110px] w-[110px] overflow-hidden rounded-full mx-auto mt-4">
+                                <img src="./img/testi01.jpg" alt="testiImg" class="h-full w-full">
+                            </div>
+                            <div class="name text-[17px] font-semibold text-center py-2">
+                                ANN SMITH
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mainSlide">
+                            <div class="cardImg h-[70px] w-[70px] lg:h-[100px] lg:w-[100px] mx-auto">
+                                <img src="./img/inverted.svg" alt="commaImg" class="h-full w-full">
+                            </div>
+                            <div class="startDiv mx-auto py-4">
+                                <ul class="flex items-center justify-center gap-2">
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="starImg h-[13px] w-[13px]">
+                                            <img src="./img/star.svg" alt="star" class="h-full w-full">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cardtxt text-[20px] sm:text-[25px] md:text-[25px] lg:text-[30px] xl:text-[30px] leading-[110%] font-semibold text-center PX-5 sm:px-20 lg:px-24">
+                                Blood bank canine teeth larynx occupational therapist oncologist optician plaque…
+                            </div>
+                            <div class="testiImg h-[110px] w-[110px] overflow-hidden rounded-full mx-auto mt-4">
+                                <img src="./img/testi01.jpg" alt="testiImg" class="h-full w-full">
+                            </div>
+                            <div class="name text-[17px] font-semibold text-center py-2">
+                                ANN SMITH
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination absolute !bottom-[-30px]">
+                    </span>
+                </div>
+            </div>
+        </div>
+    <!-- testimonial Section Ends -->
+
+    <!-- mixed Section start -->
+    <div class="py-8">
+        <div class="mixedSection py-2 sm:py-6 md:py-10 bg-[url('./img/mixedbg.jpg')] bg-no-repeat z-[0] relative after:content-[''] after:absolute after:top-0 after:left-0 after:bg-black after:opacity-10 after:h-[100%] after:w-[100%] after:z-[-1]">
+            <div class=" w-[85%] lg:w-[75%] xl:w-[65%] mx-auto py-8 z-[3]">
+                <div class="border-2 p-6 md:p-10 z-10">
+                    <div class="heading text-white text-[20px] sm:text-[25px] md:text-[30px] lg:text-[35px] xl:text-[40px] leading-[110%] font-semibold text-center">
+                        CONVENIENT MIXED CASES
+                    </div>
+                    <div class="para text-[15px] text-center text-white py-5 lg:px-20 xl:px-28">
+                        If you’re short on time or happy to let the experts do the choosing, then go for a case selected by our Master of Wine. There are plenty of options for all budgets and preferences, including this exclusive In Partnership collection
+                    </div>
+                    <button class="flex items-baseline text-white mx-auto justify-between gap-2 border-white border-2 mt-2 py-2 lg:py-3 px-4 sm:px-5 md:px-6 lg:px-8 group hover:text-yellow-400  duration-300">
+                        Learn More
+                        <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                            <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mixed Section Ends -->
+
+    <!-- blog Section Start -->
+        <div class="py-4 sm:py-6 lg:py-8 blogSection px-5 bg-slate-100">
+            <div class="py-3 md:py-8">
+                <div class="swiper blogSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mainCard shadow-xl bg-white h-full">
+                                <div class="swiperImg">
+                                    <img src="./img/blog01.jpg" alt="blogPost" class="h-full w-full">
+                                </div>
+                                <div class="cardBody p-3">
+                                    <div class="cardHeading text-yellow-900 pb-3 text-[18px]">
+                                        Bagpack
+                                    </div>
+                                    <div class="cardMainHeading py3 text-[20px] xl:text-[22px] leading-[110%] font-semibold overflow-hidden text-ellipsis line-clamp-1">
+                                        <a href="javascript:;">
+                                            POST FORMAT AUDIO BLOGS
+                                        </a>
+                                    </div>
+                                    <div class="text-[15px] text-yellow-800 pt-2">
+                                        <span class="text pe-5">
+                                            By:Tung Hoang
+                                        </span>
+                                        <span class="text-[50px] leading-[10%]">
+                                            .
+                                        </span>
+                                        <span>
+                                            0 Comments
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mainCard shadow-xl bg-white h-full">
+                                <div class="swiperImg">
+                                    <img src="./img/blog02.jpg" alt="blogPost" class="h-full w-full">
+                                </div>
+                                <div class="cardBody p-3">
+                                    <div class="cardHeading text-yellow-900 pb-3 text-[18px]">
+                                        Bagpack
+                                    </div>
+                                    <div class="cardMainHeading py3 text-[20px] xl:text-[22px] leading-[110%] font-semibold overflow-hidden text-ellipsis line-clamp-1">
+                                        <a href="javascript:;">
+                                            POST FORMAT GALLARY BLOGS
+                                        </a>
+                                    </div>
+                                    <div class="text-[15px] text-yellow-800 pt-2">
+                                        <span class="text pe-5">
+                                            By:Tung Hoang
+                                        </span>
+                                        <span class="text-[50px] leading-[10%]">
+                                            .
+                                        </span>
+                                        <span>
+                                            0 Comments
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mainCard shadow-xl bg-white h-full">
+                                <div class="swiperImg">
+                                    <img src="./img/blog03.jpg" alt="blogPost" class="h-full w-full">
+                                </div>
+                                <div class="cardBody p-3">
+                                    <div class="cardHeading text-yellow-900 pb-3 text-[18px]">
+                                        Bagpack
+                                    </div>
+                                    <div class="cardMainHeading py3 text-[20px] xl:text-[22px] leading-[110%] font-semibold overflow-hidden text-ellipsis line-clamp-1">
+                                        <a href="javascript:;">
+                                            POST FORMAT VIDEO BLOGS
+                                        </a>
+                                    </div>
+                                    <div class="text-[15px] text-yellow-800 pt-2">
+                                        <span class="text pe-5">
+                                            By:Tung Hoang
+                                        </span>
+                                        <span class="text-[50px] leading-[10%]">
+                                            .
+                                        </span>
+                                        <span>
+                                            0 Comments
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mainCard shadow-xl bg-white h-full">
+                                <div class="swiperImg">
+                                    <img src="./img/blog01.jpg" alt="blogPost" class="h-full w-full">
+                                </div>
+                                <div class="cardBody p-3">
+                                    <div class="cardHeading text-yellow-900 pb-3 text-[18px]">
+                                        Bagpack
+                                    </div>
+                                    <div class="cardMainHeading py3 text-[20px] xl:text-[22px] leading-[110%] font-semibold overflow-hidden text-ellipsis line-clamp-1">
+                                        <a href="javascript:;">
+                                            POST FORMAT AUDIO BLOGS
+                                        </a>
+                                    </div>
+                                    <div class="text-[15px] text-yellow-800 pt-2">
+                                        <span class="text pe-5">
+                                            By:Tung Hoang
+                                        </span>
+                                        <span class="text-[50px] leading-[10%]">
+                                            .
+                                        </span>
+                                        <span>
+                                            0 Comments
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mainCard shadow-xl bg-white h-full">
+                                <div class="swiperImg">
+                                    <img src="./img/blog02.jpg" alt="blogPost" class="h-full w-full">
+                                </div>
+                                <div class="cardBody p-3">
+                                    <div class="cardHeading text-yellow-900 pb-3 text-[18px]">
+                                        Bagpack
+                                    </div>
+                                    <div class="cardMainHeading py3 text-[20px] xl:text-[22px] leading-[110%] font-semibold overflow-hidden text-ellipsis line-clamp-1">
+                                        <a href="javascript:;">
+                                            POST FORMAT AUDIO BLOGS
+                                        </a>
+                                    </div>
+                                    <div class="text-[15px] text-yellow-800 pt-2">
+                                        <span class="text pe-5">
+                                            By:Tung Hoang
+                                        </span>
+                                        <span class="text-[50px] leading-[10%]">
+                                            .
+                                        </span>
+                                        <span>
+                                            0 Comments
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mainCard shadow-xl bg-white h-full">
+                                <div class="swiperImg">
+                                    <img src="./img/blog03.jpg" alt="blogPost" class="h-full w-full">
+                                </div>
+                                <div class="cardBody p-3">
+                                    <div class="cardHeading text-yellow-900 pb-3 text-[18px]">
+                                        Bagpack
+                                    </div>
+                                    <div class="cardMainHeading py3 text-[20px] xl:text-[22px] leading-[110%] font-semibold overflow-hidden text-ellipsis line-clamp-1">
+                                        <a href="javascript:;">
+                                            POST FORMAT AUDIO BLOGS
+                                        </a>
+                                    </div>
+                                    <div class="text-[15px] text-yellow-800 pt-2">
+                                        <span class="text pe-5">
+                                            By:Tung Hoang
+                                        </span>
+                                        <span class="text-[50px] leading-[10%]">
+                                            .
+                                        </span>
+                                        <span>
+                                            0 Comments
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next opacity-100 after:content-[*] right-[20px]">
+                        <div class="prevIcon h-[200px] w-[60px] rotate-[180deg]">
+                            <img src="./img/leftArrow.svg" alt="" class="h-full w-full">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev opacity-100 after:content-[*] left-[20px]">
+                        <div class="prevIcon h-[200px] w-[60px]">
+                            <img src="./img/leftArrow.svg" alt="" class="h-full w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- blog Section ends -->
+
+    <!-- brand section Start -->
+        <!-- <div class="brandSection py-8">
+            <div class="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 px-5 border mx-5">
+                <div class="brandImg aspect-[3/2] px-3 overflow-hidden hover:scale-[1.1] transition-all border-r">
+                    <a href="javascript:;">
+                        <img src="./img/brand01.jpg" alt="brandImg" class="h-full w-full">
+                    </a>
+                </div>
+                <div class="brandImg aspect-[3/2] px-3 overflow-hidden hover:scale-[1.1] transition-all border-r">
+                    <a href="javascript:;">
+                        <img src="./img/brand02.jpg" alt="brandImg" class="h-full w-full">
+                    </a>
+                </div>
+                <div class="brandImg aspect-[3/2] px-3 overflow-hidden hover:scale-[1.1] transition-all border-r">
+                    <a href="javascript:;">
+                        <img src="./img/brand03.jpg" alt="brandImg" class="h-full w-full">
+                    </a>
+                </div>
+                <div class="brandImg aspect-[3/2] px-3 overflow-hidden hover:scale-[1.1] transition-all border-r">
+                    <a href="javascript:;">
+                        <img src="./img/brand04.jpg" alt="brandImg" class="h-full w-full">
+                    </a>
+                </div>
+                <div class="brandImg aspect-[3/2] px-3 overflow-hidden hover:scale-[1.1] transition-all">
+                    <a href="javascript:;">
+                        <img src="./img/brand05.jpg" alt="brandImg" class="h-full w-full">
+                    </a>
+                </div>
+            </div>
+        </div> -->
+    <!-- brand section Ends -->
+
+    <!-- brand flex section -->
+    <div class="brandSection overflow-hidden">
+        <div class="flex flex-row py-8 px-5 mx-5 border overflow-x-auto flex-nowrap">
+            <div class="basis-1/3 xl:basis-1/5 min-w-[80%] sm:min-w-[40%] md:min-w-[30%] lg:min-w-[22%] xl:min-w-[20%]">
+                <div class="brandImg aspect-[3/2] px-3 overflow-hidden hover:scale-[1.1] transition-all border-r">
+                    <a href="javascript:;">
+                        <img src="./img/brand01.jpg" alt="brandImg" class="h-full w-full">
+                    </a>
+                </div>
+            </div>
+            <div class="basis-1/3 xl:basis-1/5 min-w-[80%] sm:min-w-[40%] md:min-w-[30%] lg:min-w-[22%] xl:min-w-[20%]">
+                <div class="brandImg aspect-[3/2] px-3 overflow-hidden hover:scale-[1.1] transition-all border-r">
+                    <a href="javascript:;">
+                        <img src="./img/brand02.jpg" alt="brandImg" class="h-full w-full">
+                    </a>
+                </div>
+            </div>
+            <div class="basis-1/3 xl:basis-1/5 min-w-[80%] sm:min-w-[40%] md:min-w-[30%] lg:min-w-[22%] xl:min-w-[20%]">
+                <div class="brandImg aspect-[3/2] px-3 overflow-hidden hover:scale-[1.1] transition-all border-r">
+                    <a href="javascript:;">
+                        <img src="./img/brand03.jpg" alt="brandImg" class="h-full w-full">
+                    </a>
+                </div>
+            </div>
+            <div class="basis-1/3 xl:basis-1/5 min-w-[80%] sm:min-w-[40%] md:min-w-[30%] lg:min-w-[22%] xl:min-w-[20%]">
+                <div class="brandImg aspect-[3/2] px-3 overflow-hidden hover:scale-[1.1] transition-all border-r">
+                    <a href="javascript:;">
+                        <img src="./img/brand04.jpg" alt="brandImg" class="h-full w-full">
+                    </a>
+                </div>
+            </div>
+            <div class="basis-1/3 xl:basis-1/5 min-w-[80%] sm:min-w-[40%] md:min-w-[30%] lg:min-w-[22%] xl:min-w-[20%]">
+                <div class="brandImg aspect-[3/2] px-3 overflow-hidden hover:scale-[1.1] transition-all border-r">
+                    <a href="javascript:;">
+                        <img src="./img/brand05.jpg" alt="brandImg" class="h-full w-full">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- brand flex section -->
+
+    <!-- signUp section start -->
+        <div class="signUpSection bg-[#c0a483] py-7 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-16">
+            <div class="lg:flex items-center">
+                <div class="w-full md:w-[80%] mx-auto lg:min-w-[40%] xl:min-w-[50%]">
+                    <div class="flex items-center">
+                        <div class="messgaeimg w-[50px] h-[50px] me-5  hidden lg:block ">
+                            <img src="./img/message.svg" alt="inbox" class="h-full w-full">
+                        </div>
+                        <div class="txt">
+                            <div class="first text-[21px] md:text-[25px] xl:text-[30px] text-white ">
+                                SIGN UP FOR OUR NEWLETTERS
+                            </div>
+                            <div class="second text-white text-[13px] md:text-[15px] leading-[110%]">
+                                Keep updated with the latest and greatest from our wonderful world of wine.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-[80%] mx-auto mt-6 lg:min-w-[50%] xl:min-w-[40%] lg:ms-auto">
+                    <div class="form flex">
+                        <input type="email" class="form-input px-4 py-2 md:py-3 w-[70%] focus-visible:outline-none" placeholder="Your Email">
+                        <button class="text-white bg-black flex  items-baseline justify-between gap-2 border-2 py-3 px-6 lg:px-8 group hover:text-yellow-400  duration-300">
+                            Subscribe
+                            <div class="flex opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 downArrow h-[13px] w-[13px]">
+                                <img src="./img/arrowRight.svg" alt="downArrow" class="h-full w-full">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- signUp section Ends -->
+
+    <!-- footer start -->
+        <div class="footer px-10 py-8 bg-[#f6f6f6]">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="secOne ">
+                    <div class="">
+                        <div class="heading text-[18px] xl:text-[20px] font-medium uppercase tracking-[1px] pb-3">
+                            Contact Us
+                        </div>
+                        <div class="address text-[16px] py-1">
+                            <span class="font-medium">Head Office:</span>
+                            26 Wyle Cop, Shrewsbury, Shropshire, SY1 1XD
+                        </div>
+                        <div class="tel text-[16px] py-1">
+                            <span class="font-medium">Tel:</span>
+                            01743 234500
+                        </div>
+                        <div class="Email text-[16px] py-1">
+                            <span class="font-medium">Email:</span>
+                            support&kowine.com
+                        </div>
+                        <div class="socialLinks py-3">
+                            <ul class="flex gap-3">
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="SociaslImg w-[40px] h-[40px] border border-black rounded-full p-3 brightness-0 hover:brightness-100 hover:bg-yellow-800 transition-all">
+                                            <img src="./img/facebook.svg" alt="socialImg" class="h-full w-full ">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="SociaslImg w-[40px] h-[40px] border border-black rounded-full p-3 brightness-0 hover:brightness-100 hover:bg-yellow-800 transition-all">
+                                            <img src="./img/insta.svg" alt="socialImg" class="h-full w-full ">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="SociaslImg w-[40px] h-[40px] border border-black rounded-full p-3 brightness-0 hover:brightness-100 hover:bg-yellow-800 transition-all">
+                                            <img src="./img/whatsapp.svg" alt="socialImg" class="h-full w-full ">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="SociaslImg w-[40px] h-[40px] border border-black rounded-full p-3 brightness-0 hover:brightness-100 hover:bg-yellow-800 transition-all">
+                                            <img src="./img/youtube.svg" alt="socialImg" class="h-full w-full ">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="secTwo ">
+                    <div class="">
+                        <div class="heading text-[18px] xl:text-[20px] font-medium uppercase tracking-[1px] pb-3">
+                            CUSTOMER SERVICES
+                        </div>
+                        <div class="items pt-1">
+                            <ul class="flex flex-col gap-1">
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Contact & FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Track Your Order
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Returns & Refunds
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Shipping & Delivery
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Interest Free Finance
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Cipmoney
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="secThree ">
+                    <div class="">
+                        <div class="heading text-[18px] xl:text-[20px] font-medium uppercase tracking-[1px] pb-3">
+                            ABOUT US
+                        </div>
+                        <div class="items pt-1">
+                            <ul class="flex flex-col gap-1">
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Our story
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        The team
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Press
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Jobs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="secFour ">
+                    <div class="">
+                        <div class="heading text-[18px] xl:text-[20px] font-medium uppercase tracking-[1px] pb-3">
+                            DISCOVER MORE
+                        </div>
+                        <div class="items pt-1">
+                            <ul class="flex flex-col gap-1">
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Twiter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Pinterest
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Jobs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="opacity-70 text-[16px] hover:text-yellow-800 transition-all">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- footer Ends -->
+
+
+</body>
+<script src="./libs/swiper/swiper.js"></script>
+<script>
+    var swiper = new Swiper(".cardSwiper", {
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        992: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+    },
+    });
+    
+</script>
+<script>
+    var swiper = new Swiper(".bottleSwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+    },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".testiSwiper", {
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+</script>
+<script>
+    var swiper = new Swiper(".blogSwiper", {
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            },
+            992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            },
+            1200: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            },
+        },
+    });
+</script>
+</html>
